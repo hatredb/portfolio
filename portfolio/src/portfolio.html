@@ -1,0 +1,163 @@
+<template>
+  <require from="./portfolio.scss"></require>
+  <section id="navbar">
+    <div class="flex-row navbar-inside">
+      <a href="#welcome">
+        <h1>Bienvenue</h1>
+      </a>
+      <a href="#portfolio">
+        <h1>Portfolio</h1>
+      </a>
+      <img src="/static/france.png"/ style="cursor: pointer;">
+      <a href="#contact">
+        <button class="red">
+          <span class="txt">CONTACT</span>
+        </button>
+      </a>
+    </div>
+  </section>
+  <section id="page">
+    <section id="fr">
+      <section id="welcome">
+        <video autoplay = "true" muted = "true" loop = "true" id="portfolioblurred">
+          <source src="/static/portfolioblurred.mp4" type="video/mp4"></source>
+        </video>
+        <div class="flex-column">
+          <div class="flex-column">
+            <h1 class="title">VOUS N'ÊTES PLUS SEUL</h1>
+            <h2>Montage professionnel</h2>
+          </div>
+          <div class="flex-grow"></div>
+          <div class="flex-row">
+            
+            <img src="/static/arrow_down.svg">
+            <div class="flex-grow"></div>
+            <a href="#portfolio">
+              <button class="red">
+                <span>PORTFOLIO</span>
+              </button> 
+            </a>
+            <div class="flex-grow"></div>
+            <img src="/static/YoutubeEditor.png" id="youtubeEditor">
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="flex-column">
+        <div class="tagembed-container" style=" width:100%;height:20%;overflow: auto;"><div class="tagembed-socialwall" data-wall-id="71072" view-url="https://widget.tagembed.com/71072?view">  </div> <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div>
+        <div class="container flex-row">
+          <div class="flex-grow"></div>
+          <div class="short flex-column" onclick="window.location='https://www.youtube.com/shorts/MVmutjxD_UE';">
+            <img src="/static/video2.svg">
+          </div>
+          <div class="flex-grow"></div>
+          <div class="wide flex-column" onclick="window.location='https://youtu.be/iobIus_QkwY';">
+            <img src="/static/video1.svg">
+          </div>
+          <div class="flex-grow"></div>
+          <div class="short flex-column" onclick="window.location='https://www.youtube.com/watch?v=bVptPvudxBA&ab_channel=cobraunie';">
+            <img src="/static/video3.svg">
+          </div>
+          <div class="flex-grow"></div>
+        </div>
+        <div class="text flex-column">
+          <p class="desc">Respecter les codes de Youtube sans être indigeste.</p>
+          <p class="desc">Apporter un aspect créatif sans dénaturer le créateur.</p>
+        </div>
+        <a href="#contact">
+          <button class="red">
+            <span class="txt">CONTACT</span>
+          </button>
+        </a>
+        <div class="why_me flex-column">
+          <div class="spacer-128"></div>
+          <h2 class="title">Pourquoi moi et pas un autre?</h2>
+          <div class="container flex-row">
+            <div class="gauche flex-column">
+              <div class="item flex-column">
+                <img class="fa" src="/static/lock.svg"></i>
+                <p class="desc">100% des missions terminés</p>
+              </div>
+              <div class="item flex-column">
+                <img class="fa" src="/static/clock.svg"></i>
+                <p class="desc">Montage Rapide</p>
+              </div>
+              <div class="item flex-column">
+                <i class="fas fa-icons"></i>
+                <img class="fa" src="/static/play.svg"></i>
+                <p class="desc">Formé par Youtube Editor</p>
+              </div>
+            </div>
+            <div class="milieu flex-column">
+              <img id="certif" style="cursor: pointer;" class="fit" src="/static/certif.png"  onclick="window.location='https://www.the-creative-academy.com/youtube-editor-bootcamp';">
+            </div>
+            <div class="droite flex-column">
+              <div class="item flex-column">
+                <img class="fa" src="/static/briefcase.svg"></i>
+                <p class="desc">Autonome</p>
+              </div>
+              <div class="item flex-column">
+                <img class="fa" src="/static/arrowup.svg"></i>
+                <p class="desc">Qualité Prioritaire</p>
+              </div>
+              <div class="item flex-column">
+                <img class="fa" src="/static/money.svg"></i>
+                <p class="desc">Prix compétitifs</p>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="#contact">
+            <button class="red" id="under_video">
+              <span class="txt">CONTACT</span>
+            </button>
+          </a> -->
+        </div>
+        <!-- <div class="flex-column">
+          <h1>Toujours pas convaincu?</h1>
+          <a href="#contact">
+            <button class="red">
+              <span class="txt">PARLONS-EN</span>
+            </button>
+          </a>
+        </div> -->
+      </section>
+      <div class="spacer-128"></div>
+      <section class="flex-column" id="contact">
+        <div class="contact flex-column">
+          <h1 class="title">CONTACTEZ-MOI</h1>
+          <div class="flex-column">
+            <div class="flex-column links">
+                <div class="flex-row card"  onclick="window.location='https://twitter.com/Cobraunie_';">
+                  <img class="small" src="/static/Twitter.png">
+                  <div class="flex-grow"></div>
+                  <p class="desc">@cobraunie_</p>
+                  <div class="flex-grow"></div>
+                </div>
+                <div class="spacer-64"></div>
+                <div class="flex-row card" onclick="window.location='https://discord.gg/yDhP8Qk';">
+                  <img class="small" src="/static/Discord.png">
+                  <div class="flex-grow"></div>
+                  <p class="desc">cobraunie#3695</p>
+                  <div class="flex-grow"></div>
+                </div>
+                <div class="spacer-64"></div>
+                <div class="flex-row card" onclick="window.location='https://www.youtube.com/channel/UC2Q9V2db772nN7ARaxHtRPQ';">
+                  <img class="small" src="/static/Youtube.png">
+                  <div class="flex-grow"></div>
+                  <p class="desc">Cobraunie Shorts</p>
+                  <div class="flex-grow"></div>
+                </div>
+                <div class="spacer-64"></div>
+                <div class="mail flex-row card" onclick="window.location='mailto://Jonathandebuck@hotmail.com';">
+                    <img class="small" src="/static/Google.png"/>
+                    <div class="flex-grow"></div>
+                    <p class="desc">Jonathandebuck@hotmail.com</p>
+                    <div class="flex-grow"></div>
+                </div>
+          </div>
+          </div>
+        </div>
+        <div class="spacer-128"></div>
+      </section>
+    </section>
+  </section>
+</template>
